@@ -1,3 +1,5 @@
 def my_select(collection)
- # your code here!
+	array = []
+	array << collection.select { |x| yield(x) }
+	array.flatten
 end
